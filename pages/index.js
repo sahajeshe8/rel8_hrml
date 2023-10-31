@@ -83,8 +83,8 @@ return (
 <>
 <Head>
    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet" />
-   <title> </title>
-   <meta
+   <title>Rel8</title>
+   {/* <meta
       name="description"
       content="Elevate your online presence with Element 8, the leading Digital Web Agency in Saudi Arabia. Our expert team crafts tailored digital solutions, from design to development, ensuring top-notch results for your website. "
       />
@@ -96,7 +96,7 @@ return (
    <meta
       property="og:description"
       content="Elevate your online presence with Element 8, the leading Digital Web Agency in Saudi Arabia. Our expert team crafts tailored digital solutions, from design to development, ensuring top-notch results for your website. "
-      />
+      /> */}
 </Head>
 <main className={`${rel.app_main} ${rel.footer_margin}`}>
 <Header />

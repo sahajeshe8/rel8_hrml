@@ -10,7 +10,7 @@ useEffect(() => {
 return (
 <section style={{background: `#eeeeee`}} className={` ${rel.text_center} `}>
 <Image
-   className={` `}
+   className={`${rel.fit_img_max} ${rel.me_2}`}
    src="/images/mob_moc.jpg"
    alt="e8"
    width={1600}
