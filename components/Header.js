@@ -73,7 +73,7 @@ tl.reverse();
 }, []);
 return (
 <header
-className={`${rel.pt_20} ${rel.pb_20} ${rel.hed_position} ${rel.hed_white} `}
+className={`${rel.pt_20} ${rel.pb_20} ${rel.hed_position} ${rel.hed_white} header_main`}
 >
 <div className={`${rel.wrap} ${rel.d_flex}`}>
 <div className={`${rel.logo_main} ${rel.mr_auto} main_logo`}>
@@ -103,7 +103,7 @@ className={`${rel.pt_20} ${rel.pb_20} ${rel.hed_position} ${rel.hed_white} `}
          Login</Link>
       </li>
    </ul>
-   <Link href="#" className={`${rel.but_01} ${rel.but_yellow}`}>
+   <Link href="#" className={`${rel.but_01} ${rel.but_yellow} top_but`}>
    <span className={`${rel.mob_hide}`}>Request for </span>demo
    </Link>
 </div>

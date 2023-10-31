@@ -38,7 +38,7 @@ useEffect(() => {
                     pinSpacing: false,
                     scrub: true,
                     animation: gsap.to(pImage.querySelector('.pinblock1'), {
-                        scale: 0.95,
+                        scale: 0.3,
                         opacity: 1,
                         zIndex: 0,
                         duration: 1,

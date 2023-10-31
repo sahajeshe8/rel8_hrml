@@ -8,16 +8,17 @@ const MobileMoc = () => {
 useEffect(() => { 
 }, []);
 return (
-<section className={`${rel.bg_gray} ${rel.text_center} `}>
+<section style={{background: `#eeeeee`}} className={` ${rel.text_center} `}>
 <Image
    className={` `}
-   src="/images/mobile_banner.png"
+   src="/images/mob_moc.jpg"
    alt="e8"
-   width={1052}
-   height={558}
+   width={1600}
+   height={810}
    priority
    />
 </section>
+
 );
 };
 export default MobileMoc;

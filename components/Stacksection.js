@@ -17,6 +17,12 @@ useEffect(() => {
             pin: true,
             pinSpacing: false,
             invalidateOnRefresh: true,
+            animation: gsap.to(card.querySelector('.pin-panel'), {
+               // scale: 0.3,
+               opacity: 1,
+               // zIndex: 0,
+               duration: 1,
+            }),
             });
          });
 }, []);
@@ -73,8 +79,8 @@ contributing to a more productive and accountable workforce.
                src="/images/carg-img-2.png"
                className={`${rel.img_mx_fluid}`}
                alt="e8"
-               width={611}
-               height={514}
+               width={809}
+               height={660}
                priority
                />
          </div>
@@ -102,8 +108,8 @@ it&apos;s easy to spread the joy!
                src="/images/carg-img-3.png"
                alt="e8"
                className={`${rel.img_mx_fluid}`}
-               width={499}
-               height={352}
+               width={809}
+               height={660}
                priority
                />
          </div>

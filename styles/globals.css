@@ -332,8 +332,13 @@ header {
 
 .scroll-up .main_logo,
 .scroll-down .main_logo {
-    width: 20px !important;
+    width: 6% !important;
 }
+
+
+
+.scroll-up .header_main{ padding-top: 10px; padding-bottom: 10px;}
+
 
 .scroll-up .ham,
 .scroll-down .ham {
@@ -344,13 +349,16 @@ header {
 
 .scroll-up header {
     position: sticky !important;
-    background: rgba(0, 0, 0, 1) !important;
-    padding-bottom: 10px;
+     padding-bottom: 10px;
+     background:#d5c6ff;
     padding-top: 10px;
 }
 
+
+.scroll-up .top_but{ height: 40px !important;}
+
 .scroll-up header.black_header_bg {
-    background: rgba(255, 255, 255, 1) !important;
+   
     padding-bottom: 10px !important;
     padding-top: 10px !important;
 }
@@ -825,3 +833,35 @@ section.orange {
 
 
 
+
+
+
+    /* ----tab------------- */
+    .tabs-content .swiper-container {
+        width: 100%;
+        height: 300px;
+      }
+      .tabs-content .swiper-slide {
+        padding: 1rem 2rem;
+      }
+      .tabs-buttons {
+        height: auto;
+        box-shadow: inset 0 -2px #e6e6e6;
+      }
+      .tabs-buttons .swiper-wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      .tabs-buttons .swiper-slide {
+        width: auto;
+        height: auto;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+      }
+      .tabs-buttons .active-tab {
+        opacity: 1;
+        border-bottom-color: red;
+      }
+
+    

@@ -21,6 +21,7 @@ import CustomersExperience from "@/components/CustomersExperience";
 import Faq from "@/components/Faq";
 import CelebrateEmployees from "@/components/CelebrateEmployees";
 import CompleteHR from "@/components/CompleteHR";
+import MocTab from "@/components/MocTab";
 import Pinning from "@/components/Pinning";
 
 
@@ -105,6 +106,8 @@ return (
 <Stacksection />
 <Elevate />
 <Transform />
+<MobileMoc />
+{/* <MocTab/> */}
 <CompleteHR />
 <CompaniesTrust />
 <Testimonial />

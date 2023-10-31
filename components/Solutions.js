@@ -45,7 +45,7 @@ return (
    <div className="content-row row_padding_bottom light-section" data-bgcolor="#fff">
                           
    <div className="pinned-section " >
-       <div className={` ${rel.padding_left} ${rel.left_txt_block} ${rel.bg_blue} ${rel.h_100vh} pinned-element left`} >
+       <div className={`   ${rel.left_txt_block} ${rel.bg_blue} ${rel.h_100vh} pinned-element left`} >
        <div className={`${rel.w_100} padding_left`}>
       <h3>
          <span>The one <br/>
@@ -69,7 +69,7 @@ return (
       <div className={`${rel.ser_img}`}>
          <Image
          className={`${rel.img_mx_fluid} ${rel.me_2}`}
-         src="/images/img-1-1@2x.png"
+         src="/images/sol-1.png"
          alt="e8"
          width={170}
          height={161}
@@ -78,16 +78,16 @@ return (
       </div>
       <h5>Payroll & Salary</h5>
       <p>
-         Streamline and centralize 
-         payroll operations, providing the tools 
-         for quick and easy payments.
+      Streamline and centralize 
+payroll operations, providing the tools 
+for quick and easy payments.
       </p>
    </li>
    <li>
       <div className={`${rel.ser_img}`}>
          <Image
          className={`${rel.fit_img_max} ${rel.me_2}`}
-         src="/images/img-2-1@2x.png"
+         src="/images/sol-2.png"
          alt="e8"
          width={170}
          height={161}
@@ -96,15 +96,15 @@ return (
       </div>
       <h5>Employee Time Clock</h5>
       <p>
-         Track and manage employee work 
-         hours on jobs, projects.
+      Track and manage employee work 
+hours on jobs, projects.
       </p>
    </li>
    <li>
       <div className={`${rel.ser_img}`}>
          <Image
          className={`${rel.fit_img_max} ${rel.me_2}`}
-         src="/images/img-3-1@2x.png"
+         src="/images/sol-3.png"
          alt="e8"
          width={170}
          height={161}
@@ -113,16 +113,16 @@ return (
       </div>
       <h5>Leave Management</h5>
       <p>
-         Managing employee vacation & 
-         absence requests doesn’t have to be 
-         time consuming.
+      Managing employee vacation & 
+absence requests doesn’t have to be 
+time consuming.
       </p>
    </li>
    <li className={`${rel.bg_02}`}>
       <div className={`${rel.ser_img}`}>
          <Image
          className={`${rel.fit_img_max} ${rel.me_2}`}
-         src="/images/img-4-1@2x.png"
+         src="/images/sol-4.png"
          alt="e8"
          width={170}
          height={161}
@@ -131,16 +131,16 @@ return (
       </div>
       <h5>KPI  & Performance</h5>
       <p>
-         KPIs provide clarity, direction, 
-         and a clear picture of how well we are 
-         doing.
+      KPIs provide clarity, direction, 
+and a clear picture of how well we are 
+doing.
       </p>
    </li>
    <li className={`${rel.bg_02}`}>
       <div className={`${rel.ser_img}`}>
          <Image
          className={`${rel.fit_img_max} ${rel.me_2}`}
-         src="/images/img-4-1@2x.png"
+         src="/images/sol-5.png"
          alt="e8"
          width={170}
          height={161}
@@ -149,16 +149,16 @@ return (
       </div>
       <h5>Attendance</h5>
       <p>
-         Our software offers a streamlined, 
-         automated solution. From clock-ins to 
-         leave requests.
+      Our software offers a streamlined, 
+automated solution. From clock-ins to 
+leave requests.
       </p>
    </li>
    <li  >
       <div className={`${rel.ser_img}`}>
          <Image
          className={`${rel.fit_img_max} ${rel.me_2}`}
-         src="/images/img-4-1@2x.png"
+         src="/images/sol-6.png"
          alt="e8"
          width={170}
          height={161}
@@ -167,16 +167,17 @@ return (
       </div>
       <h5>Training</h5>
       <p>
-         We offers comprehensive training 
-         modules. Equip your team with the tools 
-         they need to excel.
+      We offers comprehensive training 
+modules. Equip your team with the tools 
+
+they need to excel.
       </p>
    </li>
    <li >
       <div className={`${rel.ser_img}`}>
          <Image
          className={`${rel.fit_img_max} ${rel.me_2}`}
-         src="/images/img-4-1@2x.png"
+         src="/images/sol-7.png"
          alt="e8"
          width={170}
          height={161}
@@ -185,16 +186,16 @@ return (
       </div>
       <h5>Employee Management</h5>
       <p>
-         Manage employees seamlessly. 
-         From onboarding to performance reviews, 
-         our software does it all.
+      Manage employees seamlessly. 
+From onboarding to performance reviews, 
+our software does it all.
       </p>
    </li>
    <li className={`${rel.bg_02}`} >
       <div className={`${rel.ser_img}`}>
          <Image
          className={`${rel.fit_img_max} ${rel.me_2}`}
-         src="/images/img-4-1@2x.png"
+         src="/images/sol-8.png"
          alt="e8"
          width={170}
          height={161}
@@ -203,9 +204,9 @@ return (
       </div>
       <h5>Recruitment</h5>
       <p>
-         Find the right talent, faster. Smarter hiring 
-         decisions, reduced time-to-fill. 
-         Transform your hiring process today
+      Find the right talent, faster. Smarter hiring 
+decisions, reduced time-to-fill. 
+Transform your hiring process today
       </p>
    </li>
 </ul>

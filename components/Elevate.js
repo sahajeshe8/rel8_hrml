@@ -85,72 +85,89 @@ return (
        <div className={`${rel.red} ${rel.elevate_right_block} pinned-element scrolling-element right`}   >
        <ul className={`${rel.right_scroll_ul} ${rel.right_elevate_ul}`}>
    <li className={`${rel.w_100} ${rel.elevate}`}>
-   <div className={`${rel.ser_img}`}>
+   <div className={`${rel.ser_img} ${rel.mb_10}`}>
       <Image
       className={`${rel.fit_img_max} ${rel.me_2}`}
-      src="/images/img-1-1@2x.png"
+      src="/images/elevate_01.png"
       alt="e8"
       width={170}
       height={161}
       priority
       />
    </div>
-   <h5>Payroll & Salary</h5>
+   <h5>Resume Screening Made Easy</h5>
    <p>
-      Streamline and centralize 
-      payroll operations, providing the tools 
-      for quick and easy payments.
+   Say goodbye to manual resume reviews. Our AI effortlessly 
+scans and filters resumes to find the perfect fit for your team.
    </p>
    </li>
    <li className={`${rel.w_100} ${rel.elevate}`}>
-   <div className={`${rel.ser_img}`}>
+   <div className={`${rel.ser_img} ${rel.mb_20}`}>
       <Image
       className={`${rel.fit_img_max} ${rel.me_2}`}
-      src="/images/img-2-1@2x.png"
+      src="/images/elevate_02.png"
       alt="e8"
       width={170}
       height={161}
       priority
       />
    </div>
-   <h5>Employee Time Clock</h5>
+   <h5>Chatbots for Instant Support</h5>
    <p>
-      Track and manage employee work 
-      hours on jobs, projects.
+   Have questions? Our friendly HR chatbots are here 24/7, ready 
+to assist employees and applicants with lightning-fast responses.
    </p>
    </li>
    <li className={`${rel.w_100} ${rel.elevate}`}>
-   <div className={`${rel.ser_img}`}>
+   <div className={`${rel.ser_img} ${rel.mb_20}`}>
       <Image
       className={`${rel.fit_img_max} ${rel.me_2}`}
-      src="/images/img-2-1@2x.png"
+      src="/images/elevate_03.png"
       alt="e8"
       width={170}
       height={161}
       priority
       />
    </div>
-   <h5>Employee Time Clock</h5>
+   <h5>Personalized Onboarding Journeys</h5>
    <p>
-      Track and manage employee work 
-      hours on jobs, projects.
+   Say hello ! to customized onboarding experiences that guide
+new hires through their first days with your company.
    </p>
    </li>
    <li className={`${rel.w_100} ${rel.elevate}`}>
-   <div className={`${rel.ser_img}`}>
+   <div className={`${rel.ser_img} ${rel.mb_20}`}>
       <Image
       className={`${rel.fit_img_max} ${rel.me_2}`}
-      src="/images/img-2-1@2x.png"
+      src="/images/elevate_04.png"
       alt="e8"
       width={170}
       height={161}
       priority
       />
    </div>
-   <h5>Employee Time Clock</h5>
+   <h5>Performance Insights at Your Fingertips</h5>
    <p>
-      Track and manage employee work 
-      hours on jobs, projects.
+   No more guesswork. Our AI evaluates employee performance 
+and provides actionable insights for growth.
+   </p>
+   </li>
+
+   <li className={`${rel.w_100} ${rel.elevate}`}>
+   <div className={`${rel.ser_img} ${rel.mb_20}`}>
+      <Image
+      className={`${rel.fit_img_max} ${rel.me_2}`}
+      src="/images/elevate_05.png"
+      alt="e8"
+      width={170}
+      height={161}
+      priority
+      />
+   </div>
+   <h5>Diversity and Inclusion Advocates</h5>
+   <p>
+   Promote diversity and inclusion effortlessly. Our AI tools analyze 
+data and suggest strategies to create an inclusive workplace.
    </p>
    </li>
 
@@ -158,35 +175,17 @@ return (
    <div className={`${rel.ser_img}`}>
       <Image
       className={`${rel.fit_img_max} ${rel.me_2}`}
-      src="/images/img-2-1@2x.png"
+      src="/images/elevate_06.png"
       alt="e8"
       width={170}
       height={161}
       priority
       />
    </div>
-   <h5>Employee Time Clock</h5>
+   <h5>Tailored Learning and Development</h5>
    <p>
-      Track and manage employee work 
-      hours on jobs, projects.
-   </p>
-   </li>
-
-   <li className={`${rel.w_100} ${rel.elevate}`}>
-   <div className={`${rel.ser_img}`}>
-      <Image
-      className={`${rel.fit_img_max} ${rel.me_2}`}
-      src="/images/img-2-1@2x.png"
-      alt="e8"
-      width={170}
-      height={161}
-      priority
-      />
-   </div>
-   <h5>Employee Time Clock</h5>
-   <p>
-      Track and manage employee work 
-      hours on jobs, projects.
+   Unlock the full potential of your workforce with AI-driven 
+training programs personalized for each employee.
    </p>
    </li>
 </ul>
