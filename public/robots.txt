@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.element8.sa
+
+# Sitemaps
+Sitemap: https://www.element8.sa/sitemap.xml

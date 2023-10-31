@@ -1,0 +1,108 @@
+ 
+
+.footer_left_cl{
+ width: 25%;
+}
+
+.footer_right_cl{
+    width: 75%;  align-items: flex-start;
+
+    .fcl_01{ width: 25%;
+        @media #{$media-600} {
+            width: 100%;
+        }
+    }
+    .fcl_02{ width: 25%;
+    
+        @media #{$media-600} {
+            width: 100%;
+        }}
+    .fcl_03{ width: 50%;
+        text-align: right;
+        @media #{$media-600} {
+            width: 100%;
+            text-align: left;
+            padding-top: 12px;
+            border-top: solid 1px #f3f3f3;
+            margin-top: 10px;
+        }
+
+
+    }
+    @media #{$media-600} {
+        width: 100%;
+    }
+   }
+
+   .copy_left_block{ width: 50%;
+
+
+    @media #{$media-600} {
+        width: 100%; text-align: center; padding-bottom: 6px;
+    }
+
+    p{
+        @media #{$media-600} {
+            font-size: 14px ;
+        }
+
+    }
+ 
+}
+   .copy_right_block{  
+    width: 50%; display: flex; flex-wrap: wrap;
+        ul{ margin: 0; padding: 0; display: flex; margin-left: auto;
+            li{list-style: none; 
+                a{
+                    font-size: 16px; font-weight: 500; border-right: solid 1px #707070;  padding: 0% 25px;
+
+                    &:hover{ color: #dfbd00;}
+                    @media #{$media-1024} {
+                        padding: 0% 15px; 
+                    }
+                    @media #{$media-600} {
+                        padding: 0% 15px; font-size: 14px;
+                    }
+
+                }
+            }
+
+            & >:last-child{
+                 
+                   a{border-right: 0;}
+                 
+            }
+            @media #{$media-600} { flex-wrap: wrap; justify-content: center;}
+
+        }
+        @media #{$media-600} {
+            width: 100%; text-align: center;
+        }
+   }
+
+   .footer_copy_box{
+    width: 100%; padding: 20px 0 ; border-top: solid 1px #f1f1f1;
+    p{margin: 0; padding: 0;}
+    @media #{$media-600} {
+        padding: 10px 0 ;
+    }
+   }
+
+   .footer_link_ul{
+    li{list-style: none; margin-bottom: 10px;
+        a{color: #707070; text-decoration: none;
+            &:hover{
+                color: #dfbd00;
+            }
+            @media #{$media-600} {
+                font-size: 14px;
+            }
+
+        }
+
+        @media #{$media-600} {
+            margin-bottom: 5px;
+        }
+
+    }
+   }
