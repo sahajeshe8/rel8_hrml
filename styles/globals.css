@@ -333,8 +333,19 @@ header {
 .scroll-up .main_logo,
 .scroll-down .main_logo {
     width: 6% !important;
+
+
 }
 
+
+@media only screen and (max-width: 600px) {
+
+    .scroll-down .main_logo {
+        width: 12% !important;
+    
+    
+    }
+}
 
 
 .scroll-up .header_main{ padding-top: 10px; padding-bottom: 10px;}
@@ -830,6 +841,16 @@ section.orange {
         
     }
 
+    @media only screen and (max-width:600px) {
+
+        .number-counter::after{ left: calc(100% - 16px);}
+
+
+        .scroll-up .main_logo, .scroll-down .main_logo{
+            width: 15% !important; 
+        }
+        
+    }
 
 
 

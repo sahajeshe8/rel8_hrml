@@ -55,7 +55,7 @@ useEffect(() => {
 
 }, []);
 return (
-   <section className={`${rel.rel} ${rel.bg_gray} ${rel.z_100} content-row row_padding_bottom light-section padding_left`}  data-bgcolor="#fff">
+   <section className={`${rel.rel} ${rel.bg_gray} ${rel.z_100} content-row row_padding_bottom light-section  `}  data-bgcolor="#fff">
 
          <div className={`${rel.container}`}>                    
    <div className="pinned-section" >

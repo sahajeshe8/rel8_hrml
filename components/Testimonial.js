@@ -33,7 +33,7 @@ useEffect(() => {
 }, []);
 return (
 <section  style={{background: `url(../images/about_bg.jpg) no-repeat center top #E2D8FF`,  height: '100%',
-}} className={`${rel.pt_100} ${rel.pb_100} ${rel.about_sec} ${rel.mb_100}`}>
+}} className={`${rel.pt_100} ${rel.pb_100} ${rel.about_sec} ${rel.testimonial_block} ${rel.mb_100}`}>
 <div className={`${rel.w_100} `}>
 <div className={`${rel.container} ${rel.rel} container`}>
 <div className={`${rel.title_52} ${rel.testi_title_block}`}>
@@ -68,7 +68,27 @@ return (
    // install Swiper modules
    modules={[Navigation, Scrollbar]}
    spaceBetween={20}
-   slidesPerView="auto"
+   slidesPerView={1}
+   breakpoints={{
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 5,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    }}
+   loop={true}
+   autoplay={{
+      delay: 2500,
+      disableOnInteraction: false,
+    }}
+   
    navigation={{ prevEl: '.prev', nextEl: '.next', clickable: true, }}
    // navigation
    // pagination={{ clickable: true }}

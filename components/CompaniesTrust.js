@@ -19,7 +19,7 @@ scrub: 0.5,
 });
 }, []);
 return (
-<section className={`${rel.pt_100} ${rel.pb_100}`}>
+<section className={`${rel.pt_100} ${rel.pb_100} ${rel.company_logo}`}>
 <div className={`${rel.title_52} ${rel.text_center}`}>
 <h3>
    <span>Companies That </span>Trust Us

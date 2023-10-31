@@ -110,4 +110,14 @@ p{
    }
 
 
- 
+ .footer_mian{
+    .wrap{
+        @media #{$media-600} { padding-bottom: 30px; padding-top: 30px;}
+    }
+ }
+
+ .footer_copy_box{
+    .wrap{
+        padding-top: 15px; padding-bottom: 15px;
+    }
+ }

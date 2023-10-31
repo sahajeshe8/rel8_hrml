@@ -21,7 +21,7 @@ item.classList.remove('is_open');
 } 
 }, []);
 return (
-<section className={` ${rel.pb_100}`}>
+<section className={` ${rel.pb_100} ${rel.faq_sec}`}>
 <div className={`${rel.container} ${rel.rel} `}>
 <div className={`${rel.w_100}   ${rel.d_flex}`}>
 <div className={`${rel.faq_left}`}>
