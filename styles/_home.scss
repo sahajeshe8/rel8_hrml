@@ -1258,7 +1258,9 @@ img{
 	@media #{$media-600} { padding-left: 4%; padding-right: 4%;}
 
 	.about_slider_block{
-		padding-left: 0px !important;
+
+
+		@media #{$media-600} {padding-left: 0px !important;}
 	}
 }
 
