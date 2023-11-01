@@ -8,7 +8,7 @@ const MobileMoc = () => {
 useEffect(() => { 
 }, []);
 return (
-<section style={{background: `#eeeeee`}} className={` ${rel.text_center} `}>
+<section style={{background: `#eeeeee`}} className={` ${rel.text_center} ${rel.mb_100} `}>
 <Image
    className={`${rel.fit_img_max} ${rel.me_2}`}
    src="/images/mob_moc.jpg"

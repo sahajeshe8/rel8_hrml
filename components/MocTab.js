@@ -15,71 +15,141 @@ import 'swiper/css/pagination';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const MocTab = () => {
-useEffect(() => { 
-
-
-
-    var tabs = document.querySelector('.tabs-buttons .swiper-wrapper');
-
-    var tabButtons = new Swiper('.tabs-buttons', {
-      slidesPerView: 'auto',
-      freeMode: true,
-      // scrollbar: '.swiper-scrollbar',
-      mousewheelControl: true,
-      onTap: function(swiper, event) {
-        if ( event.target.classList.contains('swiper-slide') && !event.target.classList.contains('active-tab') ) {
-          event.target.parentElement.querySelector('.active-tab').classList.remove('active-tab');
-          event.target.classList.add('active-tab');
-          tabContent.slideTo(swiper.clickedIndex);
-        }
-      }
-    });
+useEffect(() => {
+  let btns = document.querySelectorAll('#btn')
+  let tabs = document.querySelectorAll('[data-tab]')
+  btns.forEach((btn, btnIndex,btnArr) => {
+    btn.addEventListener('click', function() {
+   
     
-    var tabContent = new Swiper('.tabs-content', {
-      slidesPerView: "auto",
-      onSlideChangeStart: function(swiper, event) {
-        tabs.children[swiper.previousIndex].classList.remove('active');
-        tabs.children[swiper.activeIndex].classList.add('active');
-      }
-    });
-
-
-
+      tabs.forEach((tab, tabIndex) => {
+        if (btnIndex === tabIndex) {
+       
+          if (!tab.classList.contains('hidden')) {
+            return
+          } else {
+            tab.classList.remove('hidden')
+            gsap.from(tab,{opacity:0,scale:0.95})
+          }
+        } 
+        else {
+          tab.classList.add('hidden')
+       
+        }
+      })
+      btnArr.forEach((b,bi)=>{
+        if(bi===btnIndex){
+         b.classList.add('bg-green-500')
+        }else{
+           b.classList.remove('bg-green-500')
+        }
+      })
+    })
+  })
+  
 }, []);
 return (
-<section  className={` ${rel.text_center} `}>
+<section  className={` ${rel.text_center}  ${rel.tab_section} `}>
  
 
 <div className={`${rel.container} `}>
 
+<div className='p-4'>
+
+<div className={`${rel.title_52}`}>
+<h3><span>Transform Your Organization</span><br/> 
+With Our Feature-Packed Software.
+      </h3>
+      
+   </div>
 
 
 
 
 
+  <div className="max-w-5xl mx-auto  ">
+    <div className="flex lg:justify-evenly flex-wrap gap-3 mb-5">
+      <ul className={`${rel.tab_but_row}`}>
+        <li id='btn' className=" transition-all  text-xl py-2 px-8 bg-white/25 flex justify-center items-center border rounded-full bg-green-500">Dashboard</li>
+        <li id='btn' className=" transition-all text-xl py-2  px-8 bg-white/25 flex justify-center items-center border rounded-full">Payroll & Salary</li>
+        <li id='btn' className=" transition-all text-xl py-2  px-8 bg-white/25 flex justify-center items-center border rounded-full">Leave & Attendance</li>
+        <li id='btn' className=" transition-all text-xl py-2  px-8 bg-white/25 flex justify-center items-center border rounded-full">Performance KPI</li>
+        <li id='btn' className=" transition-all text-xl py-2  px-8 bg-white/25 flex justify-center items-center border rounded-full">Training</li>
+      </ul>
+    </div>
+    <div className="w-full overflow-hidden rounded-xl">
+      <div data-tab  className={`${rel.tab_container} grid`}>
+      <Image
+      className={`${rel.fit_img_max}`}
+      src="/images/dashboard-main21.png"
+      alt="e8"
+      width={1183}
+      height={764}
+      priority
+      />
+      </div>
+      <div data-tab  className={`${rel.tab_container} hidden`}>
+      <Image
+      className={`${rel.fit_img_max}`}
+      src="/images/dashboard-main21.png"
+      alt="e8"
+      width={1183}
+      height={764}
+      priority
+      />
+      </div>
 
-<div className="swiper_container tabs_buttons">
-  <div className="swiper-wrapper">
-    <div className="swiper-slide active-tab">Tab 01</div>
-    <div className="swiper-slide">Tab 02</div>
-    <div className="swiper-slide">Tab 03</div>
-    <div className="swiper-slide">Tab 04</div>
-    <div className="swiper-slide">Tab 05</div>
+
+      <div data-tab  className={`${rel.tab_container} hidden`}>
+      <Image
+      className={`${rel.fit_img_max}`}
+      src="/images/dashboard-main21.png"
+      alt="e8"
+      width={1183}
+      height={764}
+      priority
+      />
+      </div>
+
+      <div data-tab  className={`${rel.tab_container} hidden`}>
+      <Image
+      className={`${rel.fit_img_max}`}
+      src="/images/dashboard-main21.png"
+      alt="e8"
+      width={1183}
+      height={764}
+      priority
+      />
+      </div>
+
+
+      <div data-tab  className={`${rel.tab_container}   hidden`}>
+      <Image
+      className={`${rel.fit_img_max}`}
+      src="/images/dashboard-main21.png"
+      alt="e8"
+      width={1183}
+      height={764}
+      priority
+      />
+      </div>
+      
+ 
+    </div>
+
   </div>
- </div>
 
-<div className="swiper-container tabs-content">
-  <div className="swiper-wrapper">
-    <div className="swiper-slide"><h1>Slide 01</h1></div>
-    <div className="swiper-slide"><h1>Slide 02</h1></div>
-    <div className="swiper-slide"><h1>Slide 03</h1></div>
-    <div className="swiper-slide"><h1>Slide 04</h1></div>
-    <div className="swiper-slide"><h1>Slide 05</h1></div>
+
+  <div  className={`${rel.w_100} ${rel.text_center} ${rel.tab_bot_txt}`}>
+    <h5>Our Dashboard includes many widgets containing information&apos;s 
+about the whole organization of yours. it includes quick view of leave & work updates,
+Attendance overview,  Attendance Reports, Leaves and upcoming events.</h5>
   </div>
+
 </div>
 
 
-
+ 
 </div>
 
 
