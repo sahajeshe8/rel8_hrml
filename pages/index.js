@@ -107,7 +107,7 @@ return (
 <Elevate />
 <Transform />
 <MobileMoc />
-<MocTab/>
+{/* <MocTab/> */}
 <CompleteHR />
 <CompaniesTrust />
 <Testimonial />

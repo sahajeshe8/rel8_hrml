@@ -89,7 +89,7 @@ className={`${rel.pt_20} ${rel.pb_20} ${rel.hed_position} ${rel.hed_white} heade
 </Link>
 </div>
 <div className={`${rel.nav_right}`}>
-   <ul className={`${rel.menu_ul}`}>
+   {/* <ul className={`${rel.menu_ul}`}>
       <li>
          <Link href="#">
          Features</Link>
@@ -102,7 +102,7 @@ className={`${rel.pt_20} ${rel.pb_20} ${rel.hed_position} ${rel.hed_white} heade
          <Link href="#">
          Login</Link>
       </li>
-   </ul>
+   </ul> */}
    <Link href="#" className={`${rel.but_01} ${rel.but_yellow} top_but`}>
    <span className={`${rel.mob_hide}`}>Request for </span>demo
    </Link>

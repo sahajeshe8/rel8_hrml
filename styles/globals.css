@@ -866,3 +866,5 @@ section.orange {
         background: #FDC500;
         color: #fff !important;
     }
+
+    .modal-dialog{background: #fff; min-height: auto !important; max-width: 1200px !important; width: 100%;}

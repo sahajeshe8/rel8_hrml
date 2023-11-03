@@ -1,10 +1,25 @@
-import React from "react";
+import React,  { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import rel from "@/styles/rel.module.scss";
+import AddBranch from "./FormPop";
+// fancy-box---------import--
+ 
 const Footer = () => {
+   const [modalShow, setModalShow] = useState(false);
+
+
+    
+
+
+
+
 return (
 <footer className={`${rel.footer_mian} ${rel.app_main}   ${rel.z_150} `}>
+ 
+
+
+
 <div className={`${rel.wrap} ${rel.pt_100} ${rel.pb_100} ${rel.d_flex} `}>
 <div className={`${rel.footer_left_cl}`}>
    <Image
@@ -43,7 +58,9 @@ return (
 </div>
 <div className={`${rel.fcl_03} ${rel.d_flex}`}>
 <p>Upgrade to Rel8 today and improve your organization</p>
-<Link href="#" className={`${rel.but_01} ${rel.but_yellow} ${rel.mr_auto}  `}>Book a demo</Link>
+<span  onClick={() => setModalShow(true)} className={`${rel.but_01} ${rel.but_yellow} ${rel.mr_auto}  `}>Book a demo</span>
+<AddBranch show={modalShow} onHide={() => setModalShow(false)} />
+
 </div>
 </div>
 </div>
