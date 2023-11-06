@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}";
+self.__REACT_LOADABLE_MANIFEST='{"index.js -> locomotive-scroll":{"id":4774,"files":["static/chunks/732.0d502bc76f07e295.js"]}}';

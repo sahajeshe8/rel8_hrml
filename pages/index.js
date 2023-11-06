@@ -72,10 +72,10 @@ offset: 50,
 }, []);
 // ----smooth--scroll--------start--
 useEffect(() => { 
-   // (async () => {
-   //    const LocomotiveScroll = (await import("locomotive-scroll")).default;
-   //    const locomotiveScroll = new LocomotiveScroll();
-   //  })();
+   (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
 
 }, []);
 // ----smooth--scroll--------end--
