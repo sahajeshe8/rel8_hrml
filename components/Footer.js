@@ -58,7 +58,7 @@ return (
 </div>
 <div className={`${rel.fcl_03} ${rel.d_flex}`}>
 <p>Upgrade to Rel8 today and improve your organization</p>
-<span  onClick={() => setModalShow(true)} className={`${rel.but_01} ${rel.but_yellow} ${rel.mr_auto}  `}>Book a demo</span>
+<span   onClick={() => setModalShow(true)} className={`${rel.but_01} ${rel.but_yellow} ${rel.mr_auto}  `}>Book a demo</span>
 <AddBranch show={modalShow} onHide={() => setModalShow(false)} />
 
 </div>
