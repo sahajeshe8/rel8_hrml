@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import rel from "@/styles/rel.module.scss";
 import { Modal } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css'
  
 const Form = (props) => {
 useEffect(() => { 
