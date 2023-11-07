@@ -34,14 +34,14 @@ return (
 <div className={`${rel.footer_right_cl} ${rel.d_flex}`}>
 <div className={`${rel.fcl_01}`}>
    <ul className={`${rel.footer_link_ul}`}>
-      <li>
+      {/* <li>
          <Link href="#">
          Terms and Conditions</Link>
       </li>
       <li>
          <Link href="#">
          Privacy Policy</Link>
-      </li>
+      </li> */}
       <li>
          <Link href="#">
          FAQS</Link>
@@ -79,6 +79,9 @@ return (
 </div>
 </div>
 </div>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2924872.js"></script>
+
 </footer>
 );
 };

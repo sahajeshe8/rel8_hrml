@@ -9,8 +9,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 import 'swiper/css/pagination';
+import AddBranch from "./FormPop";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const Transform = () => {
+   const [modalShow, setModalShow] = useState(false);
 useEffect(() => { 
 }, []);
 return (
@@ -143,7 +145,8 @@ return (
    assessing, and accounting for all the operations 
    of the human resources.
 </p>
-<Link href="#" className={`${rel.but_01} ${rel.but_black} ${rel.mt_50}`}>Request a demo</Link>
+<span  onClick={() => setModalShow(true)} className={`${rel.but_01} ${rel.but_black} ${rel.mt_50}`}>Request a demo</span>
+<AddBranch show={modalShow} onHide={() => setModalShow(false)} />
 </div>
 </div>
 </div>

@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import rel from "@/styles/rel.module.scss";
 import { gsap } from "gsap";
+import AddBranch from "./FormPop";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const CompaniesTrust = () => {
+   const [modalShow, setModalShow] = useState(false);
 useEffect(() => { 
 gsap.utils.toArray('.moving-gallery').forEach((section, index) => {
 const w = section.querySelector('.wrapper-gallery');
@@ -230,7 +232,8 @@ return (
 
 <div className={`${rel.w_100} ${rel.mt_30}`}>
    <div className={`${rel.text_center} ${rel.container}`}>
-      <Link href="#" className={`${rel.but_01} ${rel.but_black } ${rel.mt_20}`}>Request a demo</Link>
+      <span onClick={() => setModalShow(true)}  className={`${rel.but_01} ${rel.but_black } ${rel.mt_20}`}>Request a demo</span>
+      <AddBranch show={modalShow} onHide={() => setModalShow(false)} />
    </div>
 </div>
 </div> 

@@ -1,31 +1,33 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import rel from "@/styles/rel.module.scss";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import AddBranch from "./FormPop";
 const Header = () => {
+   const [modalShow, setModalShow] = useState(false);
 useEffect(() => {
 let lastScrollTop = 0;
-document.addEventListener("scroll", function () {
-const st = window.pageYOffset || document.documentElement.scrollTop;
-if (st > lastScrollTop) {
-// Scrolling down
-document.body.classList.remove("scroll-up");
-document.body.classList.add("scroll-down");
-} else {
-// Scrolling up
-document.body.classList.remove("scroll-down");
-document.body.classList.add("scroll-up");
-}
-// Check if scroll position is at the top (offset 0)
-if (st === 0) {
-document.body.classList.remove("scroll-up");
-document.body.classList.remove("scroll-down");
-}
-lastScrollTop = st;
-});
+// document.addEventListener("scroll", function () {
+// const st = window.pageYOffset || document.documentElement.scrollTop;
+// if (st > lastScrollTop) {
+// // Scrolling down
+// document.body.classList.remove("scroll-up");
+// document.body.classList.add("scroll-down");
+// } else {
+// // Scrolling up
+// document.body.classList.remove("scroll-down");
+// document.body.classList.add("scroll-up");
+// }
+// // Check if scroll position is at the top (offset 0)
+// if (st === 0) {
+// document.body.classList.remove("scroll-up");
+// document.body.classList.remove("scroll-down");
+// }
+// lastScrollTop = st;
+// });
 // -------------sub-menu--script-------start-
 function classToggle() {
 this.classList.toggle('sub_menu_close');
@@ -103,9 +105,10 @@ className={`${rel.pt_20} ${rel.pb_20} ${rel.hed_position} ${rel.hed_white} heade
          Login</Link>
       </li>
    </ul> */}
-   <Link href="#" className={`${rel.but_01} ${rel.but_yellow} top_but`}>
-   <span className={`${rel.mob_hide}`}>Request for </span>demo
-   </Link>
+   <span onClick={() => setModalShow(true)} className={`${rel.but_01} ${rel.but_yellow} top_but`}>
+   <span  className={`${rel.mob_hide}`}>Request a&nbsp;</span> demo
+   </span>
+   <AddBranch show={modalShow} onHide={() => setModalShow(false)} />
 </div>
 <div id="toggle_nav" className={`${rel.toggle_menu} ${rel.ml_auto}`}>
 <div className={`${rel.burger} ${rel.burger_sub} ham`}>

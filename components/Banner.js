@@ -3,10 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import rel from "@/styles/rel.module.scss";
 import $ from "jquery";
-
+import AddBranch from "./FormPop";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const Banner = () => {
+   const [modalShow, setModalShow] = useState(false);
 useEffect(() => {
 
  
@@ -35,7 +36,10 @@ return (
             />
             Watch promo</Link>
          </li>
-         <li><Link href="#" className={`${rel.but_01} ${rel.but_gray}`}>Request a demo</Link></li>
+         <li><span onClick={() => setModalShow(true)} className={`${rel.but_01} ${rel.but_gray}`}>Request a demo</span>
+         
+         <AddBranch show={modalShow} onHide={() => setModalShow(false)} />
+         </li>
       </ul>
    </div>
 </div>

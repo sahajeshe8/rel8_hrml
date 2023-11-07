@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import rel from "@/styles/rel.module.scss";
 import { gsap } from "gsap";
+import AddBranch from "./FormPop";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const Solutions = () => {
+   const [modalShow, setModalShow] = useState(false);
 useEffect(() => {
 	if (window.innerWidth > 479) {			
       var pinnedSection = gsap.utils.toArray('.pinned-element');			
@@ -59,7 +61,8 @@ return (
          assessing, and accounting for all the operations 
          of the human resources.
       </p>
-      <Link href="#" className={`${rel.but_01} ${rel.but_black} ${rel.mt_50}`}>Request a demo</Link>
+      <span onClick={() => setModalShow(true)} className={`${rel.but_01} ${rel.but_black} ${rel.mt_50}`}>Request a demo</span>
+      <AddBranch show={modalShow} onHide={() => setModalShow(false)} />
    </div>
        </div>
        

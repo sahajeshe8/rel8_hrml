@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import rel from "@/styles/rel.module.scss";
 import { gsap } from "gsap";
+import AddBranch from "./FormPop";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const CompleteHR = () => {
+   const [modalShow, setModalShow] = useState(false);
 useEffect(() => { 
 }, []);
 return (
@@ -16,7 +18,8 @@ return (
       Complete HR & Payroll Platform
    </h3>
    <p>We ensure your business runs smoothly, while increasing productivity and efficiency across the organization.</p>
-   <Link href="#" className={`${rel.but_01} ${rel.but_yellow } ${rel.mt_20}`}>Request a demo</Link>
+   <span onClick={() => setModalShow(true)}  className={`${rel.but_01} ${rel.but_yellow } ${rel.mt_20}`}>Request a demo</span>
+   <AddBranch show={modalShow} onHide={() => setModalShow(false)} />
    </div>
    <div className={`${rel.margin_} ${rel.d_flex} ${rel.mt_100} ${rel.margin_mob}`}>
    <div className={`${rel.better_block} ${rel.px_1}`}>

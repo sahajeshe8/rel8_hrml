@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import rel from "@/styles/rel.module.scss";
 import { gsap } from "gsap";
+import AddBranch from "./FormPop";
 // Import Swiper styles
 import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,7 +12,9 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/pagination';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const CelebrateEmployees = () => {
+   const [modalShow, setModalShow] = useState(false);
 useEffect(() => { 
+  
 }, []);
 return (
 <section  style={{background: `#c2b2ef`}}>
@@ -38,7 +41,10 @@ HR Portal Software.
 </p>
 <div className={`${rel.w_100}`}>
    <ul className={`${rel.but_ul} ${rel.mt_60}`}>
-   <li><Link href="#" className={`${rel.but_01} ${rel.but_yellow }`}>Request a demo</Link></li>
+   <li><span onClick={() => setModalShow(true)} className={`${rel.but_01} ${rel.but_yellow }`}>Request a demo</span>
+   <AddBranch show={modalShow} onHide={() => setModalShow(false)} />
+   
+   </li>
    <li><Link href="#" className={`${rel.but_01} ${rel.white } `}>Contact Us</Link></li>
    </ul>
 </div>
