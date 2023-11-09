@@ -32,35 +32,34 @@ return (
    />
 </div>
 <div className={`${rel.footer_right_cl} ${rel.d_flex}`}>
-<div className={`${rel.fcl_01}`}>
+{/* <div className={`${rel.fcl_01}`}>
    <ul className={`${rel.footer_link_ul}`}>
-      {/* <li>
+      <li>
          <Link href="#">
          Terms and Conditions</Link>
       </li>
       <li>
          <Link href="#">
          Privacy Policy</Link>
-      </li> */}
+      </li>
       <li>
          <Link href="#">
          FAQS</Link>
       </li>
    </ul>
-</div>
-<div className={`${rel.fcl_02}`}>
+</div> */}
+{/* <div className={`${rel.fcl_02}`}>
    <ul className={`${rel.footer_link_ul}`}>
       <li>
          <Link href="#">
          Contact Us</Link>
       </li>
    </ul>
-</div>
-<div className={`${rel.fcl_03} ${rel.d_flex}`}>
-<p>Upgrade to Rel8 today and improve your organization</p>
-<span   onClick={() => setModalShow(true)} className={`${rel.but_01} ${rel.but_yellow} ${rel.mr_auto}  `}>Book a demo</span>
-<AddBranch show={modalShow} onHide={() => setModalShow(false)} />
-
+</div> */}
+<div className={`${rel.fcl_03} ${rel.d_flex} ${rel.ms_auto}`}>
+   <p>Upgrade to Rel8 today and improve your organization</p>
+   <span   onClick={() => setModalShow(true)} className={`${rel.but_01} ${rel.but_yellow} ${rel.mr_auto}  `}>Book a demo</span>
+   <AddBranch show={modalShow} onHide={() => setModalShow(false)} />
 </div>
 </div>
 </div>

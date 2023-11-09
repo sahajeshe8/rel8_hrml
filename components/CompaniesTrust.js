@@ -8,17 +8,17 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const CompaniesTrust = () => {
    const [modalShow, setModalShow] = useState(false);
 useEffect(() => { 
-gsap.utils.toArray('.moving-gallery').forEach((section, index) => {
-const w = section.querySelector('.wrapper-gallery');
-const [x, xEnd] = (index % 2) ? [(section.offsetWidth - w.scrollWidth), 0] : [0, section.offsetWidth - w.scrollWidth];
-gsap.fromTo(w, {  x  }, {
-x: xEnd,
-scrollTrigger: { 
-trigger: section,
-scrub: 0.5,
-}
-});
-});
+      gsap.utils.toArray('.moving-gallery').forEach((section, index) => {
+         const w = section.querySelector('.wrapper-gallery');
+            const [x, xEnd] = (index % 2) ? [(section.offsetWidth - w.scrollWidth), 0] : [0, section.offsetWidth - w.scrollWidth];
+               gsap.fromTo(w, {  x  }, {
+               x: xEnd,
+               scrollTrigger: { 
+               trigger: section,
+               scrub: 0.5,
+         }
+         });
+      });
 }, []);
 return (
 <section className={`${rel.pt_100} ${rel.pb_100} ${rel.company_logo}`}>
